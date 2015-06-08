@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="412.0" prefWidth="467.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="com.altar.FXMLStringGeneratorController">
+    <children>
+      <Label layoutX="33.0" layoutY="45.0" text="Grup Kodu" />
+      <TextField id="groupCode" fx:id="couponCode" layoutX="121.0" layoutY="41.0" prefHeight="25.0" prefWidth="91.0" />
+      <Label layoutX="33.0" layoutY="111.0" text="Adet" />
+      <TextField id="couponCount" fx:id="couponCount" layoutX="121.0" layoutY="107.0" prefHeight="25.0" prefWidth="91.0" text="100" />
+      <Label layoutX="32.0" layoutY="144.0" text="Dosya Yolu" />
+      <TextField id="fileExportPath" fx:id="fileExportPath" layoutX="121.0" layoutY="140.0" prefHeight="25.0" prefWidth="262.0" text="/export/" />
+      <Button id="btnGenCode" fx:id="btnGenCode" layoutX="33.0" layoutY="185.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="352.0" text="Kod Üret" />
+      <Label layoutX="32.0" layoutY="82.0" text="Kod Uzunluğu" />
+      <TextField id="codeLen" fx:id="codeLen" layoutX="121.0" layoutY="78.0" prefHeight="25.0" prefWidth="91.0" text="9" />
+      <Label id="txtResult" fx:id="txtResult" layoutX="33.0" layoutY="258.0" prefHeight="17.0" prefWidth="420.0" text="Sonuç" textFill="#eb240a" />
+      <ProgressBar id="progressbar" fx:id="progressbar" layoutX="32.0" layoutY="231.0" prefHeight="18.0" prefWidth="352.0" progress="0.0" />
+    </children>
+</AnchorPane>
